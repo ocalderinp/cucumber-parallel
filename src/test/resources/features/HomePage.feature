@@ -3,11 +3,11 @@ Feature: Home page
   Home page should work
 
   Scenario Outline: Home page shoul open
-    Given a user opens a browser with specific configuration "<browserName>", "<browserVersion>" y "<plataforma>"
+    Given a user opens a browser with specific configuration "<browserName>", "<browserVersion>" y "<platform>"
     When a user goes to home page
     Then the user sees the home page loaded
     Examples:
-      | browserName | browserVersion | plataforma  |
+      | browserName | browserVersion | platform    |
       | Chrome      | latest         | Windows 10  |
       | Chrome      | latest-1       | Windows 10  |
       | Chrome      | latest-1       | Windows 8.1 |
